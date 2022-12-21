@@ -5,8 +5,11 @@ const router: Router = Router(); //Compara el objeto router con el tipo Router y
 //Ruta get para llamar a la api y pedirle todas las naves disponibles en la DB
 router.get('/naves',routesController.naves)
 
-//Ruta para agregar una nueva nave a la DB
-router.post('/add',routesController.add)
+//Ruta post para agregar una nueva nave a la DB
+router.post('/naves/add',routesController.add)
+
+//Ruta para editar toda una unica nave sabiendo su id
+router.put('/naves/:id',routesController.naveid)
 
 export default router
 
