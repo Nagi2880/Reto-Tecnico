@@ -11,5 +11,6 @@ router.post('/naves/add',routesController.add)
 //Ruta para editar toda una unica nave sabiendo su id
 router.put('/naves/:id',routesController.naveid)
 
+router.delete('/naves/:id',routesController.delete)
 export default router
 
