@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 
 //Configuraciones
-app.set('port', process.env.PORT || 3000) //En caso de que exita ya un puerto, de lo contrario usar el 3000
+app.set('port', process.env.PORT || 3001) //En caso de que exita ya un puerto, de lo contrario usar el 3000
 
 //Base de datos
 import './database/db'
