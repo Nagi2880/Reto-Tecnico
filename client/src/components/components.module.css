@@ -1,0 +1,23 @@
+/*Diseño del Header.tsx*/
+
+#header{
+    background-color: #121212;
+}
+#nasalogo{
+    color: white;
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+/*Arriba esta el diseño del componente Header.tsx*/
+
+/*Diseño del Body.tsx*/
+#cardcontainer{
+    position: relative;
+    padding-top: 40px;
+    
+}
+
+
+/*Arriba esta el diseño del componente Body.tsx*/
+
