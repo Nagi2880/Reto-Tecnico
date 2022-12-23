@@ -3,6 +3,7 @@
 Rutas del API
 
 GET
+
 //Todas las naves que hay en la base de datos
 localhost:3001/api/naves 
 
