@@ -19,6 +19,24 @@ class RoutesController {
             return res.json(allnaves);
         });
     }
+    navestipo(_req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const navesLanzadera = yield naveSchema_1.NaveModel.find({ "type": "Vehiculo lanzadera" });
+            return res.json(navesLanzadera);
+        });
+    }
+    navestipo2(_req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const navesLanzadera = yield naveSchema_1.NaveModel.find({ "type": "Naves espaciales no tripuladas" });
+            return res.json(navesLanzadera);
+        });
+    }
+    navestipo3(_req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const navesLanzadera = yield naveSchema_1.NaveModel.find({ "type": "Naves espaciales tripuladas" });
+            return res.json(navesLanzadera);
+        });
+    }
     //Add - Agregar y guardar
     add(req, res) {
         return __awaiter(this, void 0, void 0, function* () {

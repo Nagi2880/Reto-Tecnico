@@ -8,7 +8,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 import NaveCard from './elements/NaveCard';
 import Home from './pages/Home';
-
+import Lanzaderas from './pages/Lanzaderas';
 function App()  {
 
   //Const necesaria para crear rutas de frontend
@@ -17,6 +17,10 @@ function App()  {
     {
       path:"/",
       element: <Home />,
+    },
+    {
+      path:"/naves/lanzaderas",
+      element:<Lanzaderas/>
     },
     //Ruta para testear componentes
     {

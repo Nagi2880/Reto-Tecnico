@@ -8,6 +8,19 @@ class RoutesController {
         return res.json(allnaves)
     }
 
+    public async navestipo(_req:Request, res:Response){
+        const navesLanzadera: Nave[] = await NaveModel.find({"type": "Vehiculo lanzadera"})
+        return res.json(navesLanzadera)
+    }
+    public async navestipo2(_req:Request, res:Response){
+        const navesLanzadera: Nave[] = await NaveModel.find({"type": "Naves espaciales no tripuladas"})
+        return res.json(navesLanzadera)
+    }
+    public async navestipo3(_req:Request, res:Response){
+        const navesLanzadera: Nave[] = await NaveModel.find({"type": "Naves espaciales tripuladas"})
+        return res.json(navesLanzadera)
+    }
+
     //Add - Agregar y guardar
     public async add (req:Request, res:Response){
         

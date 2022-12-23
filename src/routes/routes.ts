@@ -4,13 +4,21 @@ const router: Router = Router(); //Compara el objeto router con el tipo Router y
 
 //Ruta get para llamar a la api y pedirle todas las naves disponibles en la DB
 router.get('/naves',routesController.naves)
+//Se pide las naves tipo vehiculo lanzadera
+router.get('/naves/lanzaderas',routesController.navestipo)
+//Se pide las naves tipo Naves espaciales no tripuladas
+router.get('./naves/notripuladas',routesController.navestipo2)
+//Se pide las naves tipo Naves espaciales tripuladas
+router.get('./naves/tripuladas',routesController.navestipo3)
+
 
 //Ruta post para agregar una nueva nave a la DB
 router.post('/naves/add',routesController.add)
 
-//Ruta para editar toda una unica nave sabiendo su id
+//Ruta put para editar toda una unica nave sabiendo su id
 router.put('/naves/:id',routesController.naveid)
 
-router.delete('/naves/:id',routesController.delete)
+//Ruta delete para eliminar alguna nave sabiendo su id
+router.delete('/naves/delete/:id',routesController.delete)
 export default router
 

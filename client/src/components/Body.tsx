@@ -19,6 +19,11 @@ export default function Body() {
        URIimage="./Naves-espaciales-tripuladas.jpg"
        route="/naves/si-tripuladas"
        />
+       <NaveCard
+       title="Todas las Naves"
+       URIimage="https://moaramoredotcom.files.wordpress.com/2016/05/soyuz_tma-7_spacecraft2edit1.jpg?w=300&h=199"
+       route="/naves"
+       />
     </div>
   )
 }

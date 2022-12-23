@@ -1,5 +1,6 @@
 import { prop, getModelForClass } from "@typegoose/typegoose";
 
+
 class Nave{
     @prop()
     public type!:string;
