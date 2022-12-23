@@ -7,9 +7,9 @@ router.get('/naves',routesController.naves)
 //Se pide las naves tipo vehiculo lanzadera
 router.get('/naves/lanzaderas',routesController.navestipo)
 //Se pide las naves tipo Naves espaciales no tripuladas
-router.get('./naves/notripuladas',routesController.navestipo2)
+router.get('/naves/notripuladas',routesController.navestipoNT)
 //Se pide las naves tipo Naves espaciales tripuladas
-router.get('./naves/tripuladas',routesController.navestipo3)
+router.get('/naves/tripuladas',routesController.navestipoT)
 
 
 //Ruta post para agregar una nueva nave a la DB

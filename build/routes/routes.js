@@ -8,9 +8,9 @@ router.get('/naves', routesController_1.routesController.naves);
 //Se pide las naves tipo vehiculo lanzadera
 router.get('/naves/lanzaderas', routesController_1.routesController.navestipo);
 //Se pide las naves tipo Naves espaciales no tripuladas
-router.get('./naves/notripuladas', routesController_1.routesController.navestipo2);
+router.get('/naves/notripuladas', routesController_1.routesController.navestipoNT);
 //Se pide las naves tipo Naves espaciales tripuladas
-router.get('./naves/tripuladas', routesController_1.routesController.navestipo3);
+router.get('/naves/tripuladas', routesController_1.routesController.navestipoT);
 //Ruta post para agregar una nueva nave a la DB
 router.post('/naves/add', routesController_1.routesController.add);
 //Ruta put para editar toda una unica nave sabiendo su id
