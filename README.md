@@ -3,10 +3,17 @@
 Rutas del API
 
 GET
-localhost:3001/api/naves //Todas las naves que hay en la base de datos
-localhost:3001/api/naves/lanzaderas //Todas las naves tipo lanzadera
-localhost:3001/api/naves/notripuladas //Todas las naves tipo no tripuladas
-localhost:3001/api/naves/tripuladas //Todas las naves tipo tripuladas
+//Todas las naves que hay en la base de datos
+localhost:3001/api/naves 
+
+//Todas las naves tipo lanzadera
+localhost:3001/api/naves/lanzaderas
+
+ //Todas las naves tipo no tripuladas
+localhost:3001/api/naves/notripuladas
+
+//Todas las naves tipo tripuladas
+localhost:3001/api/naves/tripuladas 
 
 POST
 localhost:3001/api/add //Agregar naves a la db
